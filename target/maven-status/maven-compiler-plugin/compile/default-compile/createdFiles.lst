@@ -1,0 +1,5 @@
+com\nagwa\pages\SearchPage.class
+com\nagwa\pages\HomePage.class
+com\nagwa\pages\LessonPage.class
+com\nagwa\pages\WorksheetPage.class
+com\nagwa\base\Base.class
