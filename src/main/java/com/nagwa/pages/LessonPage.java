@@ -9,12 +9,15 @@ public class LessonPage extends Base {
 
     public LessonPage (){PageFactory.initElements(driver,this);}
 
-    @FindBy(className = "question-preview")
+    @FindBy(xpath = "//a[normalize-space()='Lesson Worksheet']")
     WebElement workSheetSection;
 
     public WorksheetPage clickOnWorkSheetSection(){
         workSheetSection.click();
         return new WorksheetPage();
+    }
+    public WebElement getWorkSheetSection(){
+        return workSheetSection;
     }
 
 

@@ -52,13 +52,14 @@ public class S01_SearchSteps extends Base {
 
     @When("user go to worksheet section")
     public void userGoToWorksheetSection(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.elementToBeClickable(lessonPage.getWorkSheetSection()));
         worksheetPage=lessonPage.clickOnWorkSheetSection();
     }
 
     @Then("questions displayed")
     public void questionsDisplayed() {
         worksheetPage.getNumberOfQuestions();
-
     }
 
 

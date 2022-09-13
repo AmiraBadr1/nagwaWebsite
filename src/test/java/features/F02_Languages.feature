@@ -3,7 +3,6 @@ Feature: F02_Languages | user could select language
   Background: nagwa website is available
     Given user open the website
 
-  @search
   Scenario Outline: guest user select language
     When user select "<language>"
     Then the "<language>" is selected

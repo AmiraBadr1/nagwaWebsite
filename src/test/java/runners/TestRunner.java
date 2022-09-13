@@ -8,8 +8,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/java/features" ,
         glue = "steps",
         plugin = {"pretty","html:target/cucumber/cucumber.html",
-                "json:target/cucumber/cucumber.json"},
-
-        tags = "@search")
+                "json:target/cucumber/cucumber.json"})
 public class TestRunner {
 }

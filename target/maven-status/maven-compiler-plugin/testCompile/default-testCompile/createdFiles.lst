@@ -1,3 +1,4 @@
-steps\Hooks.class
 runners\TestRunner.class
+steps\S02_LanguagesSteps.class
+steps\Hooks.class
 steps\S01_SearchSteps.class
